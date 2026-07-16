@@ -61,8 +61,15 @@ export const Login: React.FC = () => {
                       } 
                       type={showPassword ? 'text' : 'password'}
                       className="login__input" 
+                      placeholder="Ej. 1234"
                     />
                     <FaRegEye onClick={() => setShowPassword(!showPassword)} size={20} />
+                  </div>
+                  <div className="form__badge">
+                    <i className="bx bx-key form__badge-icon"></i>
+                    <span className="form__badge-text">
+                      Prueba ingresando con la clave: <strong>prueba123</strong>
+                    </span>
                   </div>
                   { errors.keyPass?.message && <span className='login__errorMessage'>{errors.keyPass.message}</span>}
                 </div>

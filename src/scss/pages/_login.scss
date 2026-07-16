@@ -97,4 +97,35 @@
         color: rgb(171, 17, 17);
     }
 
+    .form__badge {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 0.8rem 1.2rem;
+      margin-top: 1.2rem;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 8px;
+      color: #721c24;
+      font-size: 1.4rem;
+      text-align: left;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+      &-icon {
+        font-size: 1.6rem;
+        color: #c0392b;
+        display: flex;
+        align-items: center;
+      }
+
+      &-text {
+        font-weight: 400;
+        
+        strong {
+          font-weight: 700;
+          color: #721c24;
+        }
+      }
+    }
+
 }
